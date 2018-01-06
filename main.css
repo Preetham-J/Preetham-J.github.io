@@ -178,7 +178,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
-  height: 1000px;
+  background-size: 150%;
 }
 
 /*
@@ -273,6 +273,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
-  height: 1500px;
+  background-size: 150%;
 }
 
