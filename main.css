@@ -1,0 +1,278 @@
+/*
+  ========================================
+  Reset
+  ========================================
+
+http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+
+.grid,
+.col-1-5,
+.col-2-5
+.col-3-5 {
+  padding: 0px 15px 20px 15px;
+}
+.col-1-5,
+.col-2-5,
+.col-3-5  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-5 {
+  width: 20%;
+}
+.col-2-5 {
+  width: 40%;
+}
+.col-3-5 {
+  width: 60%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #57669a;
+  color: #FFF;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+
+
+
+
+
+/*
+  ========================================
+  Header/Hero
+  ========================================
+*/
+
+.hero {
+  color: #fff;
+  line-height: 44px;
+  padding: 30px 80px 1000px 30px;
+  text-align: left;
+}
+.hero h2 {
+  font-size: 35px;
+}
+.hero p {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.headBackground {
+  background-image: url(../assets/images/drone.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  height: 1000px;
+}
+
+/*
+  ========================================
+  Main Title
+  ========================================
+*/
+
+.mainLogo {
+  border-bottom: 4px solid #FFF;
+  float: left;
+  font-size: 60px;
+  font-weight: lighter;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row {
+  background: #57669a;
+  padding-bottom: 40px;
+}
+
+/*
+  ========================================
+  Sub-Sections
+  ========================================
+*/
+.subTitle {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.row img {
+  border-radius: 10%;
+  height: 400px;
+  margin: 0px 0 0px 0px;
+  vertical-align: top;
+}
+.grid img {
+  border-radius: 15%;
+  height: 400px;
+  padding: 10px 25px 10px 25px;
+  vertical-align: top;
+}
+.sectionText h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.sectionText p {
+  font-size: 18px;
+}
+.sectionText h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.sectionText h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.sectionText h4 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.sectionText a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.sectionText a:link {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.sectionText a:visited {
+  color: #fff;
+}
+.sectionText a:hover {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.experienceBackground {
+  background-image: url(../assets/images/pcb.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  height: 1500px;
+}
+
