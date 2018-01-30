@@ -52,9 +52,6 @@ table {
   border-spacing: 0;
 }
 
-
-
-
 /*
   ========================================
   Grid
@@ -144,14 +141,39 @@ body {
 
 /*
   ========================================
-  Typography
+  Navigation
   ========================================
 */
 
+#nav_bar {
+  position: fixed;
+  top: 30%;
+  z-index: 9999;
+  height: 50px;
+}
 
+#nav_bar ul {
+  list-style-type: none;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+}
 
+#nav_bar a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
 
-
+#nav_bar li a:hover {
+    background-color: #555;
+    color: white;
+}
 
 /*
   ========================================

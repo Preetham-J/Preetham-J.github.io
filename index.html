@@ -8,182 +8,229 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Preetham Jayaram</title>
 		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
 		<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="32x32">
+
+		<!-- jQuery for Smooth Scrolling -->
+
+		<script> 
+		$(document).ready(function() {
+		  $('a[href*=#]').each(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		    && location.hostname == this.hostname
+		    && this.hash.replace(/#/,'') ) {
+		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		       if ($target) {
+		         var targetOffset = $target.offset().top;
+ 
+		         $(this).click(function() {
+		            $("#nav li a").removeClass("active");
+		            $(this).addClass('active');
+		           $('html, body').animate({scrollTop: targetOffset}, 1000);
+		           return false;
+		         });
+		      }
+		    }
+		  });
+
+		});
+		</script>
+
 	</head>
 
 	<!-- Main Body -->
 
 	<body>
 
-		<div class="headBackground">
+		<!-- Navigation Bar -->
+		<nav id="nav_bar">
+			<ul>
+				<li><a href="#header" title="Header">Header</a></li>
+				<li><a href="#profile" title="Profile">Profile</a></li>
+				<li><a href="#experience" title="Experience">Experience</a></li>
+				<li><a href="#projects" title="Projects">Projects</a></li>
+			</ul>
+		</nav>
 
-			<!-- Main Title -->
+		<!-- Intro Page -->
 
-			<header class="container group">
-				<h1 class="mainLogo">
-					<a>Preetham Jayaram</a>
-				</h1>
-			</header>
+		<div id="header">
+			<div class="headBackground">
 
-			<!-- Header/Hero -->
+				<!-- Main Title -->
 
-			<section class="hero container">
-				<h2>Interactive Resume</h2>
-				<p>Mechatronics Student (Junior) &middot; Tech Geek &middot; Aspiring software developer</p>
-			</section>
+				<header class="container group">
+					<h1 class="mainLogo">
+						<a>Preetham Jayaram</a>
+					</h1>
+				</header>
 
+				<!-- Intro Attributes -->
+
+				<section class="hero container">
+					<h2>Interactive Resume</h2>
+					<p>Mechatronics Student (Junior) &middot; Tech Geek &middot; Aspiring software developer</p>
+				</section>
+
+			</div>
 		</div>
 
 		<!-- Profile -->
 
-		<section class="row sectionText">
-			
-			<!-- Profile Header -->
-
-			<div class="subTitle">
-				<h1>Profile</h1>
-				<h2>Welcome to my website!</h2>
-			</div>
-			
-			<div class="grid">
-
-				<!-- Left Side -->
-
-				<section class="col-1-3">
-					<h3>&mdash; About Me &mdash;</h3>
-					<p>I’m an undergraduate Mechatronics Engineering student who loves programming and technology. From drones to smartphones, I understand that the future relies heavily on creating quality and robust code in an efficient time. I look forward to exploring new technologies and learning new skills to be able to fulfill this demand. <br> I hope this website can shed some light on my experiences and goals!</p>
-				</section><!--
-
-				Middle
-
-				--><section class="col-1-3">
-					<img src="assets/images/profile.png" alt="personal picture">
-				</section><!--
+		<div id="profile">
+			<section class="row sectionText">
 				
-				Right Side
+				<!-- Profile Header -->
 
-				--><section class="col-1-3">
-					<h3>&mdash; Contact Me &mdash;</h3>
-					<h4>Email: jayaramp@mcmaster.ca</h4>
-					<a href="http://www.linkedin.com/in/preetham-jayaram">LinkedIn</a> <br>
-					<a href="https://github.com/Preetham-J">GitHub</a>
-				</section>
-			</div>
-		</section>
-
-
-
-		<!-- Experience -->
-		<div class="experienceBackground">
-			<section class="experienceBackground container sectionText">
-
-				<!-- Experience Header -->
 				<div class="subTitle">
-					<h1>Experience</h1>
-					<h2>"Somewhere, something incredible is waiting to be known."</h2>
-					<h2>-Carl Sagan</h2>
+					<h1>Profile</h1>
+					<h2>Welcome to my website!</h2>
 				</div>
-
-				<!-- Education -->
-
-				<h3>&mdash; Education &mdash;</h3>
-				<div class="grid">
-
-					<!-- Degree/Location -->
-
-					<section class="col-2-5">
-						<h4>Bachelor of Engineering, Mechatronics</h4>
-						<h2>McMaster University<br>Hamilton, ON </h2>
-						<h2>Class of 2019</h2>
-					</section><!--
-
-					Description
-
-					--><section class="col-3-5">
-						<p>My education primarily focuses on software development and electronics, providing a flexible approach to solving problems. This allows me to tackle problems that both require the use of a physical system (ex. autonomous car) or don’t (ex. back-end data storage).<br>Some of my courses include: software development, operating systems, embedded systems design, dynamic models and control of physical systems, scientific computation, signals and systems.</p>
-					</section>
 				
-				</div>
-
-
-
-				<!-- Jobs -->
-				
-				<h3>&mdash; Jobs &mdash;</h3>
 				<div class="grid">
 
-					<!-- Mech Eng Intern/Kirchhoff Automotive -->
+					<!-- Left Side -->
 
-					<section class="col-2-5">
-						<h4>Mechanical Engineering Intern</h4>
-						<h2>Kirchhoff Automotive <br> North York, ON</h2>
-						<h2>May - August 2017</h2>
+					<section class="col-1-3">
+						<h3>&mdash; About Me &mdash;</h3>
+						<p>I’m an undergraduate Mechatronics Engineering student who loves programming and technology. From drones to smartphones, I understand that the future relies heavily on creating quality and robust code in an efficient time. I look forward to exploring new technologies and learning new skills to be able to fulfill this demand. <br> I hope this website can shed some light on my experiences and goals!</p>
 					</section><!--
 
-					Description
+					Middle
 
-					--><section class="col-3-5">
-						<p>While I learned a lot about manufacturing and process engineering in this position, the greatest skill I learned here was the ability to communicate with a wide range of people and coordinate their efforts to complete tasks. Kirchhoff Automotive was very diverse and open, and I was able to learn how to effectively communicate my ideas with both technical (ex. robotic technicians) and non-technical people (ex. accounting and sales managers). Through this, I was also able to learn how to coordinate their efforts in projects, which included holding meetings, scheduling tasks, and setting due dates.<br><br>Some projects I worked on: designed a quick die change procedure for a Chevrolet stamping die and decreased the time needed by 50%, resolved a robotic pin feeder problem by redesigning and implementing improved parts, utilized lean principles to design improved process layouts of production line equipment, calculated life-cycle cost assessments (ex. packaging cost) for high volume production parts.</p>
-					</section>
-				</div>
-
-
-
-				<!-- Clubs -->
-				
-				<h3>&mdash; Clubs &mdash;</h3>
-				<div class="grid">
-
-					<!-- Software Dev, Formula Electric -->
-
-					<section class="col-2-5">
-						<h4>Software Developer, Embedded Systems</h4>
-						<h2>McMaster Formula Electric SAE <br> Hamilton, ON</h2>
-						<h2>September 2016 - Current</h2>
+					--><section class="col-1-3">
+						<img src="assets/images/profile.png" alt="personal picture">
 					</section><!--
+					
+					Right Side
 
-					Description
-
-					--><section class="col-3-5">
-						<p>I initially started in this club on the mechanical team, working to create steering wheel designs on SolidWorks and 3D printing prototypes. Now, I work on the software team, dealing with creating C programs for embedded systems. My current project utilizes an ATmega32M1 chip to interface with the race car’s CAN network and control fans through PWM. This will allow us to cool the race car while also varying fan speeds depending on temperature sensor readings, ultimately saving power. The plan for this team is to compete against other North American teams this summer, with the long-term goal of competing internationally in Europe.</p>
+					--><section class="col-1-3">
+						<h3>&mdash; Contact Me &mdash;</h3>
+						<h4>Email: jayaramp@mcmaster.ca</h4>
+						<a href="http://www.linkedin.com/in/preetham-jayaram">LinkedIn</a> <br>
+						<a href="https://github.com/Preetham-J">GitHub</a>
 					</section>
-				</div>
-
-				<div class="grid">
-
-					<!-- VP Events, MMS -->
-
-					<section class="col-2-5">
-						<h4>Vice President of Events</h4>
-						<h2>McMaster Mechatronics Society <br> Hamilton, ON</h2>
-						<h2>September 2017 - Current</h2>
-					</section><!--
-
-					Description
-
-					--><section class="col-3-5">
-						<p>My position in this society deals with organizing and carrying out events for fellow students, particularly with other Mechatronics peers. From social events (ex. Boston Pizza Social) to professional events (ex. resume critique), I ensure that events are approved by university administration and that they run smoothly. I coordinate with fellow society members in weekly meetings where we discuss program issues and plan out future events. My next goal for this position is to introduce more social events, like movie night outings, to give everyone more chances to meet up and build relationships with their peers apart from just classes. I strongly believe that strong relationships with your peers are important for success in all aspects of life!</p>
-					</section>
-
 				</div>
 			</section>
 		</div>
 
+		<!-- Experience -->
+
+		<div id="experience">		
+			<div class="experienceBackground">
+				<section class="experienceBackground container sectionText">
+
+					<!-- Experience Header -->
+					<div class="subTitle">
+						<h1>Experience</h1>
+						<h2>"Somewhere, something incredible is waiting to be known."</h2>
+						<h2>-Carl Sagan</h2>
+					</div>
+
+					<!-- Education -->
+
+					<h3>&mdash; Education &mdash;</h3>
+					<div class="grid">
+
+						<!-- Degree/Location -->
+
+						<section class="col-2-5">
+							<h4>Bachelor of Engineering, Mechatronics</h4>
+							<h2>McMaster University<br>Hamilton, ON </h2>
+							<h2>Class of 2019</h2>
+						</section><!--
+
+						Description
+
+						--><section class="col-3-5">
+							<p>My education primarily focuses on software development and electronics, providing a flexible approach to solving problems. This allows me to tackle problems that both require the use of a physical system (ex. autonomous car) or don’t (ex. back-end data storage).<br>Some of my courses include: software development, operating systems, embedded systems design, dynamic models and control of physical systems, scientific computation, signals and systems.</p>
+						</section>
+					
+					</div>
+
+
+
+					<!-- Jobs -->
+					
+					<h3>&mdash; Jobs &mdash;</h3>
+					<div class="grid">
+
+						<!-- Mech Eng Intern/Kirchhoff Automotive -->
+
+						<section class="col-2-5">
+							<h4>Mechanical Engineering Intern</h4>
+							<h2>Kirchhoff Automotive <br> North York, ON</h2>
+							<h2>May - August 2017</h2>
+						</section><!--
+
+						Description
+
+						--><section class="col-3-5">
+							<p>While I learned a lot about manufacturing and process engineering in this position, the greatest skill I learned here was the ability to communicate with a wide range of people and coordinate their efforts to complete tasks. Kirchhoff Automotive was very diverse and open, and I was able to learn how to effectively communicate my ideas with both technical (ex. robotic technicians) and non-technical people (ex. accounting and sales managers). Through this, I was also able to learn how to coordinate their efforts in projects, which included holding meetings, scheduling tasks, and setting due dates.<br><br>Some projects I worked on: designed a quick die change procedure for a Chevrolet stamping die and decreased the time needed by 50%, resolved a robotic pin feeder problem by redesigning and implementing improved parts, utilized lean principles to design improved process layouts of production line equipment, calculated life-cycle cost assessments (ex. packaging cost) for high volume production parts.</p>
+						</section>
+					</div>
+
+
+
+					<!-- Clubs -->
+					
+					<h3>&mdash; Clubs &mdash;</h3>
+					<div class="grid">
+
+						<!-- Software Dev, Formula Electric -->
+
+						<section class="col-2-5">
+							<h4>Software Developer, Embedded Systems</h4>
+							<h2>McMaster Formula Electric SAE <br> Hamilton, ON</h2>
+							<h2>September 2016 - Current</h2>
+						</section><!--
+
+						Description
+
+						--><section class="col-3-5">
+							<p>I initially started in this club on the mechanical team, working to create steering wheel designs on SolidWorks and 3D printing prototypes. Now, I work on the software team, dealing with creating C programs for embedded systems. My current project utilizes an ATmega32M1 chip to interface with the race car’s CAN network and control fans through PWM. This will allow us to cool the race car while also varying fan speeds depending on temperature sensor readings, ultimately saving power. The plan for this team is to compete against other North American teams this summer, with the long-term goal of competing internationally in Europe.</p>
+						</section>
+					</div>
+
+					<div class="grid">
+
+						<!-- VP Events, MMS -->
+
+						<section class="col-2-5">
+							<h4>Vice President of Events</h4>
+							<h2>McMaster Mechatronics Society <br> Hamilton, ON</h2>
+							<h2>September 2017 - Current</h2>
+						</section><!--
+
+						Description
+
+						--><section class="col-3-5">
+							<p>My position in this society deals with organizing and carrying out events for fellow students, particularly with other Mechatronics peers. From social events (ex. Boston Pizza Social) to professional events (ex. resume critique), I ensure that events are approved by university administration and that they run smoothly. I coordinate with fellow society members in weekly meetings where we discuss program issues and plan out future events. My next goal for this position is to introduce more social events, like movie night outings, to give everyone more chances to meet up and build relationships with their peers apart from just classes. I strongly believe that strong relationships with your peers are important for success in all aspects of life!</p>
+						</section>
+
+					</div>
+				</section>
+			</div>
+		</div>
+
 		<!-- Projects -->
 
-		<section class="row sectionText">
-			
-			<!-- Project Header -->
+		<div id="projects">
+			<section class="row sectionText">
+				
+				<!-- Project Header -->
 
-			<div class="subTitle">
-				<h1>Coming Soon ...</h1>
-				<h2>Projects!</h2>
-			</div>
-			
-			<div class="grid">
+				<div class="subTitle">
+					<h1>Coming Soon ...</h1>
+					<h2>Projects!</h2>
+				</div>
+				
+				<div class="grid">
 
-		</section>
+			</section>
+		</div>
 
 		<!--Footer-->
 
