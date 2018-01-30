@@ -148,6 +148,7 @@ body {
 #nav_bar {
   position: fixed;
   top: 30%;
+  left: 1%;
   z-index: 9999;
   height: 50px;
 }
@@ -171,7 +172,7 @@ body {
 }
 
 #nav_bar li a:hover {
-    background-color: #555;
+    background-color: #2b334d;
     color: white;
 }
 
