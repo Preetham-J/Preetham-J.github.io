@@ -148,7 +148,7 @@ body {
 #nav_bar {
   position: fixed;
   top: 30%;
-  left: 1%;
+  left: 0.5%;
   z-index: 9999;
   height: 50px;
 }
@@ -157,7 +157,7 @@ body {
   list-style-type: none;
   border-radius: 25px;
   overflow: hidden;
-  width: 300px;
+  width: 100px;
   margin: 0;
   padding: 0;
   background-color: #FFF;
