@@ -1,0 +1,143 @@
+/*=======================================================
+				Styling (CSS, Bootstrap)
+				Coded By: Preetham Jayaram
+=======================================================*/
+
+
+/* All */
+html,
+body {
+	height: 100%;
+	font-family: 'Roboto', 'Open Sans', serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+.section-content {
+	padding: 5rem 0;
+}
+
+
+/* Nav Bar */
+#nav {
+	background: #222;
+}
+
+
+/* Cover */
+#cover {
+	background: #222 url('../img/drone.png') center center no-repeat;
+	background-size: cover;
+	color: white;
+	text-shadow:
+		-2px -2px 0 #000,
+    	2px -2px 0 #000,
+    	-2px 2px 0 #000,
+    	2px 2px 0 #000;  
+	height: 100%;
+	text-align: center;
+	display:flex;
+	align-items: center;
+}
+
+.cover-caption {
+	width: 100%;
+}
+
+
+/* Profile */
+#profile {
+	background: url('../img/profile.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.profile-text {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	padding: 1.875rem;
+}
+
+
+/* Experience */
+#experience {
+	/*background: #3c3c3c;*/
+	background: url('../img/stars.jpg') center center no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.experience-header {
+	padding: 1.875rem;
+	border-radius: 25px;
+    background: rgba(0,0,0,0.8);
+}
+
+.experience-section {
+	padding: 0.5rem;
+	border-radius: 25px;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+.experience-date {
+	text-align: right;
+}
+
+
+/* Projects */
+#projects {
+	background: url('../img/pcb.png') center center no-repeat;
+}
+
+.projects-header {
+	padding: 1.875rem;
+	border-radius: 25px;
+	color: white;
+    background: rgba(0,0,0,0.8);	
+}
+
+
+/* Skills */
+#skills {
+	background: #3c3c3c;
+	color: white;
+}
+
+.list-icons {
+  font-size: 4rem;
+}
+
+
+/* Interests */
+#interests {
+	background: #656565;
+	color: white;
+}
+
+.carousel {
+	border-radius: 55px 55px 55px 55px;
+	overflow: hidden;
+}
+
+.carousel-item {
+  width: auto;
+  height: 830px;
+  max-height: 100%;
+}
+
+.carousel-caption{
+	border-radius: 25px;
+	background: rgba(0,0,0,0.8);
+	color: white;
+}
+
+
+/* Footer */
+#footer-main {
+	background: #3c3c3c;
+	color: white;
+	font-size: 0.8rem;
+	padding: 2.5rem 0;
+}
