@@ -1,0 +1,448 @@
+<!--
+        Personal Website (HTML, Bootstrap, jQuery, Google Fonts, Devicons)
+        Coded by: Preetham Jayaram
+        jQuery Easing: George McGinley Smith (Open source under the BSD License)
+-->
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts and Icons -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" sizes="32x32">
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav">
+          <!-- Selection w/ Scrolling-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#photowall">Photo Wall</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <!-- Intro -->
+        <section id="cover">
+            <div class="cover-caption">
+                <div class="container">
+                    <!-- Main Title -->
+                    <div class="col-sm-10 offset-sm-1">
+                        <h1 class="display-3">Preetham Jayaram</h1>
+                        <h5>Tech Geek &middot; Software Developer &middot; Mechatronics Engineering</h5>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Profile -->
+        <section id="profile">
+            <div class="section-content">
+                <div class="container">
+                    <div class="col-md-6">
+                        <!-- Header -->
+                        <div class="profile-text">
+                            <h1>About Me</h1>
+                            <p>I’m an undergraduate engineering student who loves programming and technology! From autonomous robotics to web development, I love exploring and developing innovative applications to solve problems. I'm always looking for new things to learn, both through personal projects and work experience.</p>
+                            <p> Apart from software, I love playing and listening to music! I love exploring new genres and artists, from countries across the world. If you don't find me jamming out, you can probably find me outside playing sports, as fitness has always been a big part of my life.</p>
+                            <p>I hope this website can shed some light on my experiences and goals!</p>
+                            <!-- Links -->
+                            <h5 class="mb-3">Connect with me!</h5>
+                            <a href="https://www.linkedin.com/in/preetham-jayaram/" class="btn btn-sm btn-outline-secondary">LinkedIn</a>
+                            <a href="https://github.com/Preetham-J" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary">jayaramp@mcmaster.ca</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Experience -->
+        <section id="experience">
+            <div class="section-content">
+                <div class="container">
+                    <!-- Header -->
+                    <div class="mb-5 experience-header">
+                        <h1 class="mb-3">Experience</h1>
+                        <h5 class="lead mb-2">"Somewhere, something incredible is waiting to be known."</h5>
+                        <h5 class="lead">- Carl Sagan</h4>
+                    </div>
+                    
+                    <!-- Jobs -->
+                    <h2 class="mb-5 experience-section">Jobs</h2>
+                    <!-- Iris Automation -->
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-5">
+                            <h3 class="mb-1">Software Engineer Intern</h3>
+                            <div class="mb-2">Iris Automation</div>
+                            <div class="mb-3">San Francisco, CA</div>
+                            <p class="mb-2">> Increased data capture robustness through the design and implementation of new video processing systems for an on-board detect-and-avoid drone system</p>
+                            <p class="mb-2">> Improved efficiency and functionality of a data management system by developing new back-end data processing tools for logged flight events</p>
+                        </div>
+                        <div class="col-6 col-md-4 experience-date">
+                            <span>May 2019 - August 2019</span>
+                        </div>
+                    </div>
+                    <!-- Arcturus Networks -->
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-5">
+                            <h3 class="mb-1">Software Engineer Intern</h3>
+                            <div class="mb-2">Arcturus Networks</div>
+                            <div class="mb-3">Toronto, ON</div>
+                            <p class="mb-2">> Ported and optimized a public safety computer vision engine from x86 to various 64-bit ARM architectures</p>
+                            <p class="mb-2">> Reduced memory usage by 15% and improved bounding box tracking by implementing a new queuing pipeline for frame capture and processing</p>
+                        </div>
+                        <div class="col-6 col-md-4 experience-date">
+                            <span>January 2019 - April 2019</span>
+                        </div>
+                    </div>
+                    <!-- BlackBerry -->
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-5">
+                            <h3 class="mb-1">Software Engineer Intern</h3>
+                            <div class="mb-2">BlackBerry</div>
+                            <div class="mb-3">Mississauga, ON</div>
+                            <p class="mb-2">> Increased install and update efficiency for connected vehicle (V2X) PKI software by developing automated scripts</p>
+                            <p class="mb-2">> Expanded unit testing coverage of internal components through the development of JUnit testing</p>
+                        </div>
+                        <div class="col-6 col-md-4 experience-date">
+                            <span>September 2018 - December 2018</span>
+                        </div>
+                    </div>
+                    <!-- Clearpath -->
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-5">
+                            <h3 class="mb-1">Software Engineer Intern</h3>
+                            <div class="mb-2">Clearpath (OTTO Motors)</div>
+                            <div class="mb-3">Kitchener, ON</div>
+                            <p class="mb-2">> Decreased memory and CPU usage of audio indications by over 50% through the development and deployment of a next generation system for mobile robotic systems</p>
+                            <p class="mb-2">> Increased autonomous vehicle safety through the implementation of Lidar configuration enforcement</p>
+                        </div>
+                        <div class="col-6 col-md-4 experience-date">
+                            <span>May 2018 - August 2018</span>
+                        </div>
+                    </div>
+
+                    <!-- Clubs -->
+                    <h2 class="mb-5 experience-section">Clubs</h2>
+                    <!-- Formula Electric -->
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-5">
+                            <h3 class="mb-1">Software Developer</h3>
+                            <div class="mb-2">McMaster Formula Electric SAE</div>
+                            <div class="mb-3">Hamilton, ON</div>
+                            <p class="mb-2">> Increased data collection and analytic capabilities by creating data infrastructure to allow telemetry data to be read and transmitted from the racecar</p>
+                            <p class="mb-2">> Presently competing against North American institutions with the goal of going international by end of 2018</p>
+                        </div>
+                        <div class="col-6 col-md-4 experience-date">
+                            <span>September 2017 - April 2018</span>
+                        </div>
+                    </div>
+                    <!-- McMaster Mechatronics Society -->
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-5">
+                            <h3 class="mb-1">Vice President of Events</h3>
+                            <div class="mb-2">McMaster Mechatronics Society</div>
+                            <div class="mb-3">Hamilton, ON</div>
+                            <p class="mb-2">> Organized various program and department-wide events, including social, academic, and professional events</p>
+                            <p class="mb-2">> Examples of events include Boston Pizza Social, Meet the Profs Night, Tron Pre-Exam Sushi Night</p>
+                            <p class="mb-2">> Coordinated with other society members in weekly meetings to discuss events, budgeting, and relations with university administration</p>  
+                        </div>
+                        <div class="col-6 col-md-4 experience-date">
+                            <span>September 2017 - April 2018</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Education -->
+                    <h2 class="mb-5 experience-section">Education</h2>
+                    <!-- Mechatronics -->
+                    <div class="row">
+                        <div class="col-12 col-md-8 mb-5">
+                            <h3 class="mb-1">Mechatronics Engineering</h3>
+                            <div class="mb-2">McMaster University</div>
+                            <div class="mb-3">Hamilton, ON</div>
+                            <p class="mb-2">> Currently finished third year of a four-year program (3.8 GPA/3.3 CGPA)</p>   
+                            <p class="mb-2">> Relevant courses: software development, real-time systems, operating systems, embedded systems design, predictive and intelligent control systems</p> 
+                        </div>
+                        <div class="col-6 col-md-4 experience-date">
+                            <span>Expected Graduation: April 2020</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="section-content">
+                <div class="container">
+                    <!-- Header -->
+                    <div class="projects-header">
+                        <h1>Projects</h1>
+                        <h5 class="lead">Check out some of my cool projects below!</h5>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-12">
+            
+                            <!-- Masonry Cards -->
+                            <div class="card-columns">
+
+                                <!-- Grapevine -->
+                                <div class="card">
+                                    <img class="card-img-top" src="img/suggestion.JPG" alt="Main page">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Grapevine</h5>
+                                        <p class="card-text">Here's a web application I built that suggests Spotify playlists based on user preference, or based on new emerging genres. I built it using Node.js + Express and MySQL on the backend, with HTML, CSS, and Bootstrap for the frontend. The application is hosted using Heroku and AWS. There's still a bunch of stuff I plan on adding to increase its functionality even more. Check it out!</p>
+                                        <a href="https://github.com/Preetham-J/Grapevine" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                                    </div>
+                                </div>
+
+                                <!-- Quote -->
+                                <div class="card p-3">
+                                    <blockquote class="blockquote mb-0 card-body">
+                                        <p>My greatest joy comes from exploring new things. Never stop learning and growing. Never limit yourself!</p>
+                                        <footer class="blockquote-footer">
+                                            <small class="text-muted">Me :)</small>
+                                        </footer>
+                                    </blockquote>
+                                </div>
+
+                                <!-- GymRat -->
+                                <div class="card">
+                                    <img class="card-img-top" src="img/gymrat.png" alt="Pose estimation">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GymRat</h5>
+                                        <p class="card-text">This is a project I worked on with my group for Hack the North 2018. It's a web application that utilizes TensorFlow.js and the PoseNet machine learning model to estimate a user's form and provide feedback for improvement. The model itself provides the computer vision capability to estimate form from pictures, and provides data about the user's limbs and joints. The web application portion was developed using Node.js + Express.</p>
+                                        <a href="https://github.com/Preetham-J/GymRat" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                                    </div>
+                                </div>
+
+                                <!-- Pensieve -->
+                                <div class="card">
+                                    <img class="card-img-top" src="img/completingtasks.JPG" alt="Completing tasks">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pensieve</h5>
+                                        <p class="card-text">This is a simple web application that functions as a to-do list, allowing the creation and deletion of tasks in a fun, reference filled way. I built it using Python + Django and SQLite on the backend, with HTML, CSS, and Bootstrap for the frontend. Check out the code linked!</p>
+                                        <a href="https://github.com/Preetham-J/Pensieve" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                                    </div>
+                                </div>
+
+                                <!-- Drone Vision -->
+                                <div class="card">
+                                    <img class="card-img-top" src="img/drone.jpg" alt="FPV drone">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Drone Vision</h5>
+                                        <p class="card-text">Here's an ongoing project that I have to implement autonomy in a first-person-view drone I built recently. The goal is to have it be able to do basic autonomous tasks, like take-off and hover. Check out my basic attempts at things like shape detection below!</p>
+                                        <a href="https://github.com/Preetham-J/Drone-Vision" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                                    </div>
+                                </div>
+
+                                <!-- infoAR -->
+                                <div class="card">
+                                    <img class="card-img-top" src="img/infoAR.png" alt="FPV drone">
+                                    <div class="card-body">
+                                        <h5 class="card-title">infoAR</h5>
+                                        <p class="card-text">This is a project I worked on with my partner for DeltaHacks 2018. It's an augmented reality application that detects images and displays machine information. The idea stems from Industry 4.0, with future technicians using this technology in conjuction with other IOT enabled devices for better workplace integration. The app was built using Unity3D + Vuforia AR, along with C# for scripts and Google SketchUp for 3D modelling. Check out the project below!</p>
+                                        <a href="https://github.com/Preetham-J/infoAR" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- GitHub Link -->
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Check out all my projects!</h5>
+                                        <a href="https://github.com/Preetham-J/" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills">
+            <div class="section-content">
+                <div class="container">
+                    <div class="col-md-6 mb-5">
+                        <div>
+                            <h1>Skills</h1>
+                            <p class="lead">Here are some of things I've had experience with! That being said, I'm always looking to learn new things, even with the things listed below.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- General Programming -->
+                        <h5 class="subheading mb-3">General Programming and Databasing</h5>
+                            <ul class="list-inline list-icons">
+                                <li class="list-inline-item">
+                                    <i class="devicon-cplusplus-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-python-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-c-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-mysql-plain-wordmark"></i>
+                                </li>
+                            </ul>
+                        <!-- Web Development -->
+                        <h5 class="subheading mb-3">Web Development</h5>
+                            <ul class="list-inline list-icons">
+                                <li class="list-inline-item">
+                                    <i class="devicon-html5-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-css3-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-nodejs-plain-wordmark"></i>
+                                </li>
+                            </ul>
+                        <!-- Tools/Services -->
+                        <h5 class="subheading mb-3">Tools and Services</h5>
+                            <ul class="list-inline list-icons">
+                                <li class="list-inline-item">
+                                    <i class="devicon-git-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-linux-plain"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="devicon-docker-plain-wordmark"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <img src="img/jira.png" alt="JIRA logo" height="40" width="100">
+                                </li>                                   
+                            </ul>
+                        <!-- Robotics/Embedded -->
+                        <h5 class="subheading mb-3">Robotics and Embedded</h5>
+                            <ul class="list-inline list-icons">
+                                <li class="list-inline-item">
+                                    <img src="img/ROS.png" alt="ROS logo" height="30" width="120">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img src="img/opencv.png" alt="OpenCV logo" height="80" width="70">
+                                </li>                               
+                                <li class="list-inline-item">
+                                    <img src="img/arm.png" alt="ARM logo" height="100" width="100">
+                                </li>                    
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Wall -->
+        <section id="photowall" class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="parent">
+                        <div class="child football">
+                            <p>2015-2016 and 2017-2018 Football Champs! <br> @McMaster University</p>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="child osheaga">
+                            <p>Had a great time at the Osheaga 2018 music festival! <br> @Montreal</p>
+                        </div>
+                    </div>              
+                    <div class="parent">
+                        <div class="child camping">
+                            <p>Canada Day camping trip = lots of S'mores <br> @Washago</p>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="child bp">
+                            <p>Family fun on our summer trip! <br> @Bruce Peninsula</p>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="child clearpath">
+                            <p>Had a great summer internship at Clearpath! <br> Love me some autonomous robots. <br> @Kitchener, ON </p>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="child blossoms">
+                            <p>Cherry blossom season. <br> @High Park</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <!-- Footer -->
+        <footer id="footer-main">
+            <div class="container">
+                <div class="row  justify-content-center">
+                    <div class="col-sm-3">
+                        <h6>Coded by Preetham Jayaram</h6>
+                    </div>
+                    <!-- Credits -->
+                    <div class="col-sm-3">
+                        <h6>Thanks!</h6>
+                        <p>Huge shoutout to Devicons, Bootstrap, and Google Fonts for their easy to use styling!</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- JavaScript for scrolling -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="js/scrolling.js"></script>
+
+    </body>
+</html>
